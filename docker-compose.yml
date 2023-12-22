@@ -1,0 +1,11 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+    container_name: linked_list_cpp
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/app
+    tty: true
